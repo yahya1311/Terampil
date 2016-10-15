@@ -40,7 +40,7 @@
   <body>
     <!-- Navigation
     ==========================================-->
-    <nav id="tf-menu" class="navbar navbar-default navbar-fixed-top">
+    <nav id="tf-menu-custom" class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -50,19 +50,19 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">
-              <img class="logo" src="img/logo-hijau-full.png" />
+          <a class="navbar-brand-custom" href="index.php">
+              <img alt="Brand" class="img-responsive-custom" src="img/logo-hijau-full.png" />
           </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right menu-custom">
             <li><a href="#tf-home" class="page-scroll">Home</a></li>
             <li><a href="#tf-produk" class="page-scroll">Produk</a></li>
             <li><a href="#tf-tentang" class="page-scroll">Tentang</a></li>
             <li><a href="#tf-kontak" class="page-scroll">Kontak</a></li>
-            <li><a href="#tf-login" class="page-scroll">Log in</a></li>
+            <li><a href="#tf-login" class="page-scroll">Sign in</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -72,55 +72,55 @@
     ==========================================-->
     <div id="tf-home" class="text-center">
         <div class="overlay">
-            <div class="content">
-                <h1>Cari <strong><span class="color">Workshop</span></strong> yang Kamu Mau!</h1>
+            <div class="content-home">
+                <h1 class="h1-title">Cari <strong><span class="color">Workshop</span></strong> yang Kamu Mau!</h1>
                 <br />
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
+                <div class="col-md-8 col-md-offset-2">
                     <form>
-                        <div class="row">
-                            <div class="col-md-5">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="pilihKota" placeholder="Pilih Kota">
-                                </div>
+                        <div class="col-md-5 col-sm-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="pilihKota" placeholder="Pilih Kota">
                             </div>
-                            <div class="col-md-5">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="pilihKategori" placeholder="Pilih Kategori">
-                                </div>
-                            </div>
-                            <div class="col-md-2">
-                                <button type="submit" class="btn tf-btn btn-default">Submit</button>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="form-group">
-                                    <input type="date" class="form-control" id="pilihTanggal" placeholder="Mulai Tanggal">
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <div class="form-group">
-                                    <input type="number" class="form-control" id="pilihDurasi" placeholder="Durasi (Jam)">
-                                </div>
-                            </div>
-                            <div class="col-md-2"></div>
                         </div>
-                        
+                        <div class="col-md-5 col-sm-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="pilihKategori" placeholder="Pilih Kategori">
+                            </div>
+                        </div>
+                        <div class="col-md-2 visible-md visible-lg">
+                            <button type="submit" class="btn tf-btn btn-default">Cari</button>
+                        </div>
+                        <div class="col-md-5 col-sm-12">
+                            <div class="form-group">
+                                <input type="date" class="form-control" id="pilihTanggal" placeholder="Mulai Tanggal">
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-sm-12">
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="pilihDurasi" placeholder="Durasi (Jam)">
+                            </div>
+                        </div>
+                        <div class="col-md-2 visible-xs visible-sm">
+                            <button type="submit" class="btn tf-btn btn-default">Cari</button>
+                        </div>
+                        <div class="col-md-2 visible-md visible-lg"></div>
                     </form>
-                    </div>
-                </div>
-                <a href="#tf-about" class="fa fa-angle-down page-scroll"></a>
+                </div>                       
+                <div class="col-md-12 col-sm-12">
+                    <a href="#tf-produk" class="fa fa-angle-down page-scroll"></a>    
+                </div>  
             </div>
         </div>
     </div>
 
-    <!-- Services Section
+    <!-- Produk Section
     ==========================================-->
-    <div id="tf-services" class="text-center">
-        <div class="container">
+    <div id="tf-produk" class="text-center">
+        <div class="container color-inverse">
             <div class="section-title center">
                 <h2><strong>Produk</strong> Kami</h2>
-                <div class="line">
-                    <hr>
+                <div class="line inverse">
+                    <hr class="inverse">
                 </div>
                 <div class="clearfix"></div>
                 <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>
@@ -148,9 +148,9 @@
         </div>
     </div>
 
-    <!-- Portfolio Section
+    <!-- Tentang Section
     ==========================================-->
-    <div id="tf-works">
+    <div id="tf-tentang">
         <div class="container"> <!-- Container -->
             <div class="section-title text-center center">
                 <h2><strong>Tentang</strong> Kami</h2>
@@ -181,23 +181,22 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                    <label for="inputName">Nama</label>
+                                    <input type="text" class="form-control" id="inputName" placeholder="Nama Anda *">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    <label for="inputEmail">Alamat Email</label>
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Alamat Email Anda *">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="exampleInputEmail1">Message</label>
+                            <label for="inputPesan">Pesan</label>
                             <textarea class="form-control" rows="3"></textarea>
                         </div>
-                        
-                        <button type="submit" class="btn tf-btn btn-default">Submit</button>
+                        <button type="submit" class="btn tf-btn btn-default text-center">Kirim Pesan</button>
                     </form>
                     </div>
                 </div>
@@ -208,12 +207,11 @@
     <nav id="footer">
         <div class="container">
             <div class="pull-left fnav">
-                <p>ALL RIGHTS RESERVED. COPYRIGHT © 2014. Designed by <a href="https://dribbble.com/shots/1817781--FREEBIE-Spirit8-Digital-agency-one-page-template">Robert Berki</a> and Coded by <a href="https://dribbble.com/jennpereira">Jenn Pereira</a></p>
+                <p>COPYRIGHT©2016. Terampil.</p>
             </div>
             <div class="pull-right fnav">
                 <ul class="footer-social">
                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
                     <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                     <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                 </ul>

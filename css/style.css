@@ -70,6 +70,7 @@ ul, ol{
 	webkit-padding: 0;
 	moz-padding: 0;
 }
+
 /* Navigation */
 #tf-menu {
 	padding: 20px;
@@ -115,9 +116,10 @@ font-weight: 900;
 .navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #FFF;
 	}
+
 /* Home Style */
 #tf-home{
-	background: url(../img/01.jpg);
+	/*background: url(../img/01.jpg);*/
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -155,7 +157,7 @@ a.fa.fa-angle-down {
 	border: 2px solid #b4b4b4;
 	border-radius: 50%;
 	font-size: 24px;
-	margin-top: 200px;
+	margin-top: 125px;
 	transition: all 0.5s;
 }
 a.fa.fa-angle-down:hover{
@@ -332,20 +334,7 @@ img.img-circle.team-img {
     color: #FFF;
     text-align: center;
 }
-/* Gallery Section 
-==============================*/
-#tf-works{
-	padding: 80px 0;
-}
-.categories{ 
-	padding: 10px 0;
-}
-ul.cat li{
-	display: inline-block;
-}
-#tf-works li.pull-right {
-	margin-top: 10px;
-}
+
 ol.type li{
 	display: inline-block;
 	margin-left: 20px;
