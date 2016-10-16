@@ -10,15 +10,24 @@ use App\Workshop;
 
 class WorkshopsController extends Controller
 {
+    private $limit = 4;
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        $workshops = Workshop::all();
-        return view('workshops.index', ['workshops' => $workshops]);
+        if($id_kategori = ($request->get('id_kategori'))) {
+            $workshops = Workshop::where('id_kategori', $id_kategori)->paginate($this->limit);
+        }
+        else {
+            $workshops = Workshop::paginate($this->limit);
+        }
+        // $workshops = Workshop::paginate(1);
+        //dd($workshops);
+
+        return view('workshops.index', compact('workshops'));
     }
 
     /**

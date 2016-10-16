@@ -123,13 +123,15 @@
           <div class="row">
             <div class="col-md-3">
               <div class="list-group">
-                <a href="#" class="list-group-item active">All Contact <span class="badge">10</span></a>
-                <a href="" class="list-group-item">Family <span class="badge">4</span></a>
-                <a href="" class="list-group-item">Friends <span class="badge">3</span></a>
-                <a href="" class="list-group-item">Other <span class="badge">3</span></a>
-              </div>
-            </div><!-- /.col-md-3 -->
+              <?php $selected_group = Request::get('id_kategori') ?>
+              <a href="{{ route('workshops.index') }}" class="list-group-item {{ empty($selected_group) ? 'active' : '' }}">All Groups <span class="badge">{{ App\Workshop::count() }}</span></a>
 
+              @foreach (App\Kategori::all() as $group)
+                  <a href="{{ route('workshops.index', ['kategori_id' => $group->id_kategori]) }}" class="list-group-item {{ $selected_group == $group->id_kategori ? 'active' : '' }}">{{ $group->nama_kategori }} <span class="badge">{{ $group->workshops->count() }}</span></a>
+              @endforeach
+            </div>
+         </div><!-- /.col-md-3 -->
+ 
             <div class="col-md-9">
               <div class="panel panel-default">
                 <table class="table">
@@ -163,23 +165,8 @@
 
               <div class="text-center">
                 <nav>
-                  <ul class="pagination">
-                    <li>
-                      <a href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                      </a>
-                    </li>
-                    <li class="active"><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">4</a></li>
-                    <li><a href="#">5</a></li>
-                    <li>
-                      <a href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                      </a>
-                    </li>
-                  </ul>
+                  
+                  {{$workshops->appends(Request::query())}}
                 </nav>
               </div>
             </div>
