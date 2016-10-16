@@ -123,8 +123,9 @@
           <div class="row">
             <div class="col-md-3">
               <div class="list-group">
-              <?php $selected_group = Request::get('id_kategori') ?>
-              <a href="{{ route('workshops.index') }}" class="list-group-item {{ empty($selected_group) ? 'active' : '' }}">All Groups <span class="badge">{{ App\Workshop::count() }}</span></a>
+              <?php $selected_group = Request::get('kategori_id') ?>
+              
+              <a href="{{ route('workshops.index') }}" class="list-group-item {{ empty($selected_group) ? 'active' : '' }}">Semua Kategori <span class="badge">{{ App\Workshop::count() }}</span></a>
 
               @foreach (App\Kategori::all() as $group)
                   <a href="{{ route('workshops.index', ['kategori_id' => $group->id_kategori]) }}" class="list-group-item {{ $selected_group == $group->id_kategori ? 'active' : '' }}">{{ $group->nama_kategori }} <span class="badge">{{ $group->workshops->count() }}</span></a>
@@ -141,7 +142,8 @@
                       <div class="media">
                         <div class="media-left">
                           <a href="#">
-                            <img class="media-object" src="../uploads/default.png" alt="...">
+                           <?php $photo = ! is_null($workshop->foto) ? $workshop->foto : 'default.png' ?>
+                           {!! Html::image('uploads/' . $photo, $workshop->foto, ['class' => 'media-object', 'width' => 300, 'height' => 300]) !!}
                           </a>
                         </div>
                         <div class="media-body">
