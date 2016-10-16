@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Terampil - An Easiest Way To Become Skilled Person</title>
@@ -120,26 +120,30 @@
                     <hr class="inverse">
                 </div>
                 <div class="clearfix"></div>
-                <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>
+                <p>Cara mudah ikut workshop gak pake ribet, yang penting, <strong>Jelas</strong>, <strong>Efisien</strong>, dan <strong>Tepat</strong></p>
             </div>
             <div class="space"></div>
             <div class="row">
                 <div class="col-md-4 col-sm-12 service">
-                    <i class="fa fa-desktop"></i>
-                    <h4><strong>Web design</strong></h4>
-                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                    <!--<i class="fa fa-desktop"></i>-->
+                    <img src="assets/img/index/Jelas.png" />
+                    <h4><strong>Jelas</strong></h4>
+                    <p>Pengelompokkan workshop / pelatihan berdasarkan kategori yang spesifik</p>
                 </div>
 
                 <div class="col-md-4 col-sm-12 service">
-                    <i class="fa fa-mobile"></i>
-                    <h4><strong>Mobile Apps</strong></h4>
-                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                    <!--<i class="fa fa-mobile"></i>-->
+                    <img src="assets/img/index/Jam.png" />
+                    <h4><strong>Efisien</strong></h4>
+                    <p>Pengingat adanya workshop / pelatihan ke pengguna secara langsung <br> <br>
+Adanya personal profil untuk user terdaftar yang dapat memberikan history workshop / pelatihan yang pernah diikuti.</p>
                 </div>
 
                 <div class="col-md-4 col-sm-12 service">
-                    <i class="fa fa-camera"></i>
-                    <h4><strong>Photography</strong></h4>
-                    <p>The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+                    <!--<i class="fa fa-camera"></i>-->
+                    <img src="assets/img/index/Tepat.png" />
+                    <h4><strong>Tepat</strong></h4>
+                    <p>Hasil pencarian yang akurat terhadap kata kunci yang diinginkan user.</p>
                 </div>
             </div>
         </div>
@@ -155,7 +159,8 @@
                     <hr>
                 </div>
                 <div class="clearfix"></div>
-                <small><em>Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</em></small>
+                <h3>Sebuah aplikasi yang menghubungkan penyedia workshop dengan orang yang membutuhkan workshop secara jelas, efisien, dan tepat sasaran.
+</h3>
             </div>
             <div class="space"></div>   
         </div>
